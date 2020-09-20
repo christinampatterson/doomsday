@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla|Playfair+Display|Lato|Lora|Elsie|Montserrat:100,200,300"
+      rel="stylesheet"
+    />
+    <title>doomsday</title>
+  </head>
+
+  <header>
+    <div class="imgbox">
+      <img class="center-fit" src="logo.png" />
+    </div>
+  </header>
+
+  <body>
+    <!--Assignments-->
+    <div class="assignment">
+      <div class="name">assignment 1</div>
+      <div class="due-date">time left</div>
+      <br /><br /><br />
+      <div id="myProgress">
+        <div id="myBar">100 HRS</div>
+      </div>
+    </div>
+    <div class="assignment">
+      <div class="name">assignment 2</div>
+      <div class="due-date">time left</div>
+      <br /><br /><br />
+      <div id="myProgress2">
+        <div id="myBar2">1 HRS</div>
+      </div>
+    </div>
+
+    <!--Add Event Button-->
+    <button id="add-event-button" class="add-event-button">+</button>
+
+    <!--Assignment Form-->
+    <form
+      id="form"
+      accept-charset="UTF-8"
+      action="action_page.php"
+      autocomplete="off"
+      method="GET"
+      target="_blank"
+      style="
+        visibility: hidden;
+        font-family: Karla;
+        width: 400px;
+        margin: auto;
+        padding: 50px;
+        border: 1px #000 solid;
+        background-color: #8dbcb4;
+      "
+    >
+      <legend style="font-size: 18pt;">Add Task:</legend>
+      <br />
+      <label for="name">Task Name:</label>
+      <input name="name" id="name" type="text" value="" required /> <br />
+      <br />
+      <label for="date">Date due:</label>
+      <input
+        type="date"
+        id="date"
+        name="due-date"
+        value="2020-03-01"
+        min="2018-01-01"
+        required
+      />
+      <br />
+      <label for="time">Time due:</label>
+      <input
+        type="time"
+        id="time"
+        name="due-time"
+        min="00:00"
+        max="23:"
+        required
+      /><br />
+      <button
+        id="form-submit-button"
+        style="font-family: Karla; padding: 5px; margin-top: 5px; float: right;"
+      >
+        Submit
+      </button>
+    </form>
+
+    <!--Doomsday.js-->
+    <script src="doomsday.js"></script>
+  </body>
+
+  <footer>
+    Site by Chelsea Chen, Christina Patterson, Elaine Pham, and Meenu Singh
+  </footer>
+</html>
