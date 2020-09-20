@@ -1,3 +1,9 @@
+n = new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+
 <script> document.getElementById("date").value = new Date().getDate();
     document.getElementById("date").min = new Date().getDate();
 </script>
