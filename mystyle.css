@@ -18,8 +18,8 @@ body {
 }
 
 .center-fit {
-    max-width: 100%;
-    max-height: 100vh;
+    max-width: 80%;
+    max-height: 80vh;
     margin: auto;
 }
 
@@ -32,4 +32,11 @@ body {
 .name {
     font-family: 'Karla';
     font-size: 18pt;
+    float: left;
+}
+
+.due-date {
+    font-family: 'Karla';
+    font-size: 18pt;
+    float: right;
 }
