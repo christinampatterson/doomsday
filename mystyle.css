@@ -1,10 +1,33 @@
 header {
     padding: 50px;
+    background-color: #E4FAF7;
   }
 
 body {
-    background-color: #000000;
+    background-color: #8DBCB4;
     padding: 0 0 0 0;
     margin: auto;
     color: #FFF;
   }
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.assignment {
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    border: #000000 1px;
+}
+
+#name {
+    font-family: 'Times New Roman', Times, serif;
+}
